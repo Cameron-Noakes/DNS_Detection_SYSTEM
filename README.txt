@@ -25,7 +25,6 @@ and alert the person in charge if it ever falls out of range. - This is what my 
 This code was uploaded to AWS Lambda and used with CloudWatch as well as Simple Notification service (SNS)
 to send me emails whenever it falls out of range.
 
-
                                               My process:
 I thought of many ways to get the companys IP range into Python, I then decided the best way was to just
 generate them from a start and finish value, I then stored then in a list for easy querying and cross referencing
@@ -33,4 +32,4 @@ generate them from a start and finish value, I then stored then in a list for ea
 I then used built-in libraries to allow the lookup of the DNS A record.
 
 I then compared the DNS A record to each individual item in the list until the linear search finished.
-If it wasn't found then it wasn't in the IP range.
+If it wasn't found then it wasn't in the IP range. 
